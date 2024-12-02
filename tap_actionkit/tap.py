@@ -7,10 +7,10 @@ from singer_sdk import Tap
 from singer_sdk import typing as th  # JSON schema typing helpers
 
 from tap_actionkit.client import ActionKitStream
-from tap_actionkit.streams import ContactsStream
+from tap_actionkit.streams import UsersStream
 
 STREAM_TYPES = [
-    ContactsStream,
+    UsersStream,
 ]
 
 
