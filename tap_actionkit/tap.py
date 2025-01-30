@@ -23,7 +23,7 @@ class TapActionKit(Tap):
         th.Property(
             "hostname",
             th.StringType,
-            required=True,
+            required=False,
             description="The ActionKit instance hostname",
         ),
         th.Property(
