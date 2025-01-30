@@ -19,6 +19,9 @@ class ActionKitStream(RESTStream):
 
     @property
     def url_base(self) -> str:
+        if self.config.get("full_url"):
+            return f'{self.config.get("full_url")}/rest/v1'
+
         hostname = self.config.get("hostname")
         if not hostname:
             raise ValueError("'hostname' must be provided in the config. Please check your configuration.")
